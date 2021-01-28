@@ -16,7 +16,7 @@ function Schedule() {
             <p key={index}>{hour.hour}</p>
           </div>
           {hour.activities.map((activity, index) =>
-            <div key={index} className={(activity == "") ? "event" : "occupied event"}>
+            <div key={index} className={(activity === "") ? "event" : "occupied event"}>
               <p key={index} >{activity}</p>
             </div>
           )}
